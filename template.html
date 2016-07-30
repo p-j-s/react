@@ -14,15 +14,21 @@
 				render: function() {
 					return <div>
 						<h1>{this.props.text}</h1>
-						<p></p>
+						<p>{this.props.children}</p>
 
 					</div>;
 				}
 			});
 			React.render(
-				<div><MyComponent text="Hello World"/> 
-				<MyComponent text="How are You?"/> 
-				<MyComponent text="Goodby"/>
+				<div><MyComponent text="Hello World">
+					This is Hello.
+				</MyComponent> 
+				<MyComponent text="How are You?">
+					This is how are you.
+				</MyComponent>
+				<MyComponent text="Goodby">
+					This is goodbuy.
+				</MyComponent>
 				</div>, document.getElementById('react-container'));
 		</script>
 
