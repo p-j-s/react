@@ -29,7 +29,7 @@ var Note = React.createClass({
             <div className="note">
             <textarea defaultValue={this.props.children} 
             className="form-control"></textarea>
-            <button onClick={this.save} className="btn btn-success btn-small glyphicon glyphicon-floppydisk" />
+            <button onClick={this.save} className="btn btn-success btn-sm glyphicon glyphicon-floppydisk" />
             </div>
             )
     },
@@ -38,7 +38,7 @@ var Note = React.createClass({
             return this.renderForm();
         }
         else {
-            return this.renderDisplay;
+            return this.renderDisplay();
         }
     }
 });
