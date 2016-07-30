@@ -17,7 +17,7 @@
     		return {
     			backgroundColor: "blue",
     			height: 200,
-    			width: 200
+    			width: 200,
     		}
     	},
     	update: function() {
@@ -29,12 +29,11 @@
     		this.setState({backgroundColor: color});
     	},
         render: function() {
-            return
-            <div style={this.state} onClick={this.update}></div>;
+            return <div style={this.state} onClick={this.update}></div>;
         }
     });
 
-    React.render(<Box colors="Red, DarkMagenta, Salmon, Chartreuse"/>, document.body);
+    React.render(<Box colors="Red,DarkMagenta,Salmon,Chartreuse"/>, document.body);
 
 </script>
 </body>
